@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Protokolla Relay</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Protokolla Relay</h1>
+    </header>
+    <section>
+        <p>Hello there! This is page designated for protokolla tor relay. The relay is a hobby project ran by <a href="https://roytakanen.fi">Roy Takanen</a>. Currently this rela</p>
+    </section>
+    <section>
+        <h2>Operating costs</h2>
+        <p>Currently hosting this relay costs me 4$/month. I use DigitalOcean (the cheapest droplet there) to host this relay. </p>
+        <p>Therefore I am open for donations:</p>
+        <ul>
+            <li>BCH address: <code>bitcoincash:qrdz837gxtwleu4es490wh7j0arydhl4wg9v3mqspf</code></li>
+            <li>BTC address: <code>bitcoin:1LtRAtK9hHkz9HkFwP4r1V2widtDj86JvY</code></li>
+            <li>Paypal: <a href="https://paypal.me/RoyTakanen">paypal.me/RoyTakanen</a></li>
+        </ul>
+        <p>If you cannot donate but you have Digital Ocean or Linode promo codes please send them to the following email: <code>tor-relay-promo-code@protokolla.fi</code>.</p>
+    </section>
+    <section>
+        <h2>Server information</h2>
+        <p>The server ip address is 164.92.209.51.</p>
+        <p>You can view the relay metrics at
+            <a href="https://metrics.torproject.org/rs.html#details/738B5E00AEAD6B744766F99F7C150C5A6CD8A1A3">TOR Metrics</a>
+        </p>
+        <p></p>
+        <h3>torrc:</h3>
+        <pre>SocksPort 0
+RunAsDaemon 1
+ORPort 9001
+Nickname ProtokollaRelay
+Log notice file /var/log/tor/notices.log
+DirPort 9030
+ExitPolicy reject6 *:*, reject *:*
+AccountingStart month 1 00:00
+AccountingMax 250 GB
+DisableDebuggerAttachment 0
+ControlPort 9051
+CookieAuthentication 1</pre>
+    </section>
+
+</body>
+
+</html>
