@@ -14,22 +14,22 @@
         <h1>Protokolla Relay</h1>
     </header>
     <section>
-        <p>Hello there! This page is designated for <a href="https://protokolla.fi">protokolla.fi</a> tor relay. The relay is a hobby project ran by <a href="https://roytakanen.fi">Roy Takanen</a>.</p>
+        <p>Hello there! This page is designated for <a href="https://protokolla.fi">protokolla.fi</a> Tor relay. The relay is a hobby project ran by <a href="https://roytakanen.fi">Roy Takanen</a>.</p>
     </section>
     <section>
         <h2>Operating costs</h2>
-        <p>Currently hosting this relay costs me 4$/month. I use DigitalOcean (the cheapest droplet there) to host this relay. </p>
-        <p>Therefore I am open for donations:</p>
+        <p>Currently hosting this relay costs me 0€/month. I host this relay at my home. </p>
+        <p>I am open for donations (if I get enough I will create tor exit relay):</p>
         <ul>
             <li>BCH address: <code>bitcoincash:qrdz837gxtwleu4es490wh7j0arydhl4wg9v3mqspf</code></li>
             <li>BTC address: <code>bitcoin:1LtRAtK9hHkz9HkFwP4r1V2widtDj86JvY</code></li>
-            <li>Paypal: <a href="https://paypal.me/RoyTakanen">paypal.me/RoyTakanen</a></li>
+            <li>Paypal (add message about Tor): <a href="https://paypal.me/RoyTakanen">paypal.me/RoyTakanen</a></li>
         </ul>
         <p>If you cannot donate but you have DigitalOcean or Linode promo codes please send them to the following email: <code>tor-relay-promo-code@protokolla.fi</code>.</p>
     </section>
     <section>
         <h2>Server information</h2>
-        <p>The server ip address is 164.92.209.51.</p>
+        <p>The server ip address is 84.248.204.115.</p>
         <p>You can view the relay metrics at
             <a href="https://metrics.torproject.org/rs.html#details/738B5E00AEAD6B744766F99F7C150C5A6CD8A1A3">TOR Metrics</a>
         </p>
@@ -42,11 +42,14 @@ Nickname ProtokollaRelay
 Log notice file /var/log/tor/notices.log
 DirPort 9030
 ExitPolicy reject6 *:*, reject *:*
-AccountingStart month 1 00:00
-AccountingMax 250 GB
 DisableDebuggerAttachment 0
 ControlPort 9051
 CookieAuthentication 1</pre>
+    </section>
+    <section>
+        <h2>History</h2>
+        <p>I used to (only 8 days) host this relay at DigitalOcean. It was not the best idea since there is 500 GB monhtly bandwidth limit that I ran into pretty fast. The experiment cost me 5€. I regret doing that. After hitting that limit I moved the server
+            to home. The relay has 100/100 Mbps connection, 2 GB RAM & 2 vCPU (Ryzen 7 3700x).</p>
     </section>
 
 </body>
